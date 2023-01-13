@@ -1,7 +1,7 @@
 # String-Searching
 
 
-##Brute Force (Naive Method)
+## Brute Force (Naive Method)
 Slide the pattern over text one by one and check for a match. If a match is found, then slide by 1
 again to check for subsequent matches.
 The Time Complexity: O(N 2 )
@@ -9,7 +9,9 @@ The number of comparisons in the worst case is O(M * (N – M + 1)). Although st
 have repeated characters are not likely to appear in English text, they may well occur in other
 applications (for example, in binary texts). The KMP matching algorithm improves the worst
 case to O(N).
-##KMP
+
+
+## KMP
 Unlike Brute Force Algorithm, where we slide the pattern by one and compare all characters at
 each shift, we use a value from lps[] to decide the next characters to be matched. The idea is to
 not match a character that we know will anyway match.
@@ -23,7 +25,9 @@ When we see a mismatch
 increment it only when there is a match.
 ○ We also know (from above definition) that lps[j-1] is count of characters of
 pat[0...j-1] that are both proper prefix and suffix.
-##RABIN KARP:
+
+
+## RABIN KARP:
 Like the Brute Force Algorithm, the Rabin-Karp algorithm also slides the pattern one by
 one. But unlike the Brute Force, the Rabin Karp algorithm matches the hash value of the
 pattern with the hash value of the current substring of text, and if the hash values match
@@ -43,4 +47,4 @@ The hash function suggested by Rabin and Karp calculates an integer value. The i
 for a string is the numeric value of a string.
 
 
-##I have used a library known as tkinter which helped us to build the GUI for the Algorithms
+## I have used a library known as tkinter which helped us to build the GUI for the Algorithms
