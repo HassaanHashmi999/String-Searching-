@@ -47,4 +47,4 @@ The hash function suggested by Rabin and Karp calculates an integer value. The i
 for a string is the numeric value of a string.
 
 
-## I have used a library known as tkinter which helped us to build the GUI for the Algorithms
+## I have used a library known as tkinter which helped to build the GUI for the Algorithms
